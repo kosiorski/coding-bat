@@ -5,14 +5,19 @@ import java.util.Map;
 
 public class Task4 {
     public static void main(String[] args) {
+        /*
+        The classic word - count algorithm:
+        given an array of strings,return a Map<String, Integer> with a key for each different string, with the value the number
+        of times that string appears in the array.
+        */
 
         String[] array = {"a", "b", "a", "c", "b"};
 
         Task4 task = new Task4();
 
-        Map<String, Integer> stringIntegerMap = task.wordCount(array);
+        Map<String, Integer> map = task.wordCount(array);
 
-        stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
+        map.forEach((k, v) -> System.out.println(k + " " + v));
 
 
     }

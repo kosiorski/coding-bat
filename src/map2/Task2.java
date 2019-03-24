@@ -5,14 +5,18 @@ import java.util.Map;
 
 public class Task2 {
     public static void main(String[] args) {
+        /*
+        Given an array of strings,return a Map<String, Integer> containing a key for every different string in the array, and
+        the value is that string 's length.
+        */
 
         String[] array = {"this", "and", "that", "and"};
 
         Task2 task = new Task2();
 
-        Map<String, Integer> stringIntegerMap = task.wordLen(array);
+        Map<String, Integer> map = task.wordLen(array);
 
-        stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
+        map.forEach((k, v) -> System.out.println(k + " " + v));
 
 
     }

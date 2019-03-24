@@ -5,14 +5,18 @@ import java.util.Map;
 
 public class Task3 {
     public static void main(String[] args) {
+        /*
+        Given an array of non - empty strings, create and return a Map<String, String> as follows:
+        for each string add its first character as a key with its last character as the value.
+        */
 
         String[] array = {"man", "moon", "good", "night"};
 
         Task3 task = new Task3();
 
-        Map<String, String> stringIntegerMap = task.pairs(array);
+        Map<String, String> map = task.pairs(array);
 
-        stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
+        map.forEach((k, v) -> System.out.println(k + " " + v));
 
 
     }

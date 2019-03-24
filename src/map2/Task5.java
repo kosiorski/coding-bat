@@ -5,14 +5,19 @@ import java.util.Map;
 
 public class Task5 {
     public static void main(String[] args) {
+        /*
+        Given an array of non - empty strings,return a Map<String, String> with a key for every different first character
+        seen, with the value of all the strings starting with that character appended together in the order they appear in
+        the array.
+        */
 
         String[] array = {"aa", "bb", "cc", "aAA", "cCC", "d"};
 
         Task5 task = new Task5();
 
-        Map<String, String> stringIntegerMap = task.firstChar(array);
+        Map<String, String> map = task.firstChar(array);
 
-        stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
+        map.forEach((k, v) -> System.out.println(k + " " + v));
 
 
     }
