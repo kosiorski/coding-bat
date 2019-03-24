@@ -8,9 +8,9 @@ public class Task2 {
 
         String[] array = {"this", "and", "that", "and"};
 
-        Task2 task1 = new Task2();
+        Task2 task = new Task2();
 
-        Map<String, Integer> stringIntegerMap = task1.wordLen(array);
+        Map<String, Integer> stringIntegerMap = task.wordLen(array);
 
         stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
 
