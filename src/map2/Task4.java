@@ -6,22 +6,30 @@ import java.util.Map;
 public class Task4 {
     public static void main(String[] args) {
 
-        String[] array = {"man", "moon", "good", "night"};
+        String[] array = {"a", "b", "a", "c", "b"};
 
         Task4 task = new Task4();
 
-        Map<String, String> stringIntegerMap = task.pairs(array);
+        Map<String, Integer> stringIntegerMap = task.wordCount(array);
 
         stringIntegerMap.forEach((k, v) -> System.out.println(k + " " + v));
 
 
     }
 
-    public Map<String, String> pairs(String[] strings) {
-        Map<String, String> result = new HashMap<>();
+    public Map<String, Integer> wordCount(String[] strings) {
+        Map<String, Integer> result = new HashMap<>();
 
         for (String str : strings) {
-            result.put(String.valueOf(str.charAt(0)), String.valueOf(str.charAt(str.length() - 1)));
+
+            if (result.containsKey(str)) {
+                Integer integer = result.get(str);
+                integer += 1;
+                result.put(str, integer);
+
+            } else {
+                result.put(str, 1);
+            }
         }
 
         return result;
