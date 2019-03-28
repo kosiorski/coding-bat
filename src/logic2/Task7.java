@@ -9,7 +9,7 @@ public class Task7 {
 
         blackjack(19, 21) → 21
         blackjack(21, 19) → 21
-b       lackjack(19, 22) → 19
+        blackjack(19, 22) → 19
         */
 
         Task7 task = new Task7();
