@@ -12,14 +12,14 @@ public class Task5 {
     endOther("abc", "abXabc") → true
     */
 
-//    System.out.println(endOther("Hiabc", "abc"));
-//    System.out.println(endOther("AbC", "HiaBc"));
-//    System.out.println(endOther("abc", "abXabc"));
-//    System.out.println(endOther("Hiabcx", "bc"));
-//    System.out.println(endOther("ab", "ab12"));
+    //    System.out.println(endOther("Hiabc", "abc"));
+    //    System.out.println(endOther("AbC", "HiaBc"));
+    //    System.out.println(endOther("abc", "abXabc"));
+    //    System.out.println(endOther("Hiabcx", "bc"));
+    //    System.out.println(endOther("ab", "ab12"));
   }
 
-  public  boolean endOther(String a, String b) {
+  public boolean endOther(String a, String b) {
 
     if (a.length() < b.length()) {
 
