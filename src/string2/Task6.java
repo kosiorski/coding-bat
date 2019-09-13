@@ -10,16 +10,14 @@ public class Task6 {
     xyzThere("xyz.abc") → true
     */
 
-    //    System.out.println(xyzThere("abcxyz"));
-    //    System.out.println(xyzThere("abc.xyz"));
-    //    System.out.println(xyzThere("xyz.abc"));
+//    System.out.println(xyzThere("abcxyz"));
+//    System.out.println(xyzThere("abc.xyz"));
+//    System.out.println(xyzThere("xyz.abc"));
+//    System.out.println(xyzThere("abc.xyzxyz"));
   }
 
   public boolean xyzThere(String str) {
-
-    for (int i = 0; i < str.length(); i++) {
-      //
-    }
-    return (str.contains("xyz") && !str.contains(".xyz"));
+    str = str.replaceAll("(\\.)(xyz)", "");
+    return str.contains("xyz");
   }
 }
