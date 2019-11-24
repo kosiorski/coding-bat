@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Task8 {
     public static void main(String[] args) {
         /*
-        Given three ints, a b c, one of them is small, one is medium and one is large.Return true if the three values are
+        Given three ints, a b c, one of them is small, one is medium and one is large.Return true if the three values arepl
         evenly spaced, so the difference between small and medium is the same as the difference between medium and large.
 
         evenlySpaced(2, 4, 6) → true
